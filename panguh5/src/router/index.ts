@@ -8,17 +8,15 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     name: 'Home',
-    meta: { title: "豆神大语文提分班-迎新", alis: 'home' },
+    meta: { title: "豆神大语文提分班-迎新", arrow: true, keepAlive: true },
     component: () => import('@/views/Home.vue')
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
+  {
+    path: '/order',
+    name: 'Order',
+    meta: { title: "订单页面", arrow: true, keepAlive: false },
+    component: () => import('@/views/Order.vue')
+  },
 ]
 
 const router = createRouter({

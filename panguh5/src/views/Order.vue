@@ -1,13 +1,13 @@
 <template>
-  <Mynav/>
-  我是主页
+<Mynav/>
+  订单页面
 </template>
 
 <script lang="ts">
 import Mynav from "@/components/Mynav.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "Home",
+  name: "Order",
   components: {
     Mynav,
   },

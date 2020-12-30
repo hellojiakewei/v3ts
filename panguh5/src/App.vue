@@ -2,7 +2,7 @@
   <div id="nav">
     <router-view v-slot="{ Component,route }">
       <keep-alive>
-        <component class="view" :is="Component" />
+        <component  :is="Component" />
       </keep-alive>
     </router-view>
   </div>
